@@ -22,8 +22,8 @@ export function setExchangeItems(first_course_item, first_course_amount, second_
 
 export function getCoursesFromSite() {
     return (dispatch) => {
-        // $.get("http://185.28.101.235/courses")
-        $.get("http://localhost/courses")
+        $.get("http://185.28.101.235/courses")
+        // $.get("http://localhost/courses")
         .then((val) => {
             if (val.success) {
                 dispatch({
