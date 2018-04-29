@@ -1,0 +1,12 @@
+.selected_star {
+cursor: pointer;
+}
+
+.unselected_star {
+    cursor: pointer; 
+}
+
+.contaner {
+    display: flex;
+    justify-content: center;
+}

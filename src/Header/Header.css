@@ -1,0 +1,9 @@
+.header__base_currency__select {
+    margin:0px !important;
+}
+
+.header__wrap_base_currency_select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

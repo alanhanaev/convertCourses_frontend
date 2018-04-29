@@ -1,0 +1,24 @@
+.contaner {
+    display: flex;
+    justify-content: center;
+}
+
+.container__wrap_from {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__wrap_from__select_field {
+    margin-right: 15px;
+}
+
+.container__wrap_to {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__wrap_to__select_field {
+    margin-right: 15px;
+}
