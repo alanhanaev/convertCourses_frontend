@@ -51,10 +51,12 @@ class CoursesConverterCnt extends Component {
     }
 
     onChangeFirstItem(event, index, value) {
+        console.log(this.props);
         this.setCourses(this.getCurrencyByCode(value), this.props.first_course_amount, this.props.second_course_item);
     }
 
     onChangeSecondItem(event, index, value) {
+        console.log(this.props);
         this.setCourses(this.props.first_course_item, this.props.first_course_amount, this.getCurrencyByCode(value));
     }
 
@@ -63,7 +65,7 @@ class CoursesConverterCnt extends Component {
     }
 
     setCourses(first_item, first_item_amount, second_item) {
-        if (first_item_amount.match(/^[+-]?\d+(\.\d+)?$/))
+        if (first_item_amount.toString().match(/^[+-]?\d+(\.\d+)?$/))
         var amount_end_currency = this.convert_courses(first_item, first_item_amount, second_item);
         this.props.pageActions.setExchangeItems(first_item, first_item_amount, second_item, amount_end_currency);
     }
